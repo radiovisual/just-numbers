@@ -1,6 +1,6 @@
 # just-numbers [![Build Status](https://travis-ci.org/radiovisual/just-numbers.svg?branch=master)](https://travis-ci.org/radiovisual/just-numbers)
 
-> Remove all non-number characters and return a number. `'$1,234'` → 1234
+> Remove all non-number characters and return a number. `'$1,234'` → `1234`
 
 
 ## Install
