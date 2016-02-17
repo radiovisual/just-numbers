@@ -28,7 +28,7 @@ justNumbers('$1,234.23', {float: true});
 //=> 1234.23
 ```
 
-This module will return `0` if no numbers are found in the string;
+This module will return `0` if no numbers are found in the string.
 
 ## API
 
