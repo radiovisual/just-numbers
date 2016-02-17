@@ -1,0 +1,31 @@
+{
+  "name": "just-numbers",
+  "version": "0.0.0",
+  "description": "Remove all non-number characters and return a number. '$1,234' → 1234",
+  "license": "MIT",
+  "repository": "radiovisual/just-numbers",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "needle-string": "0.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "xo": "^0.12.1"
+  }
+}
