@@ -1,6 +1,6 @@
 {
   "name": "just-numbers",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Remove all non-number characters and return a number. '$1,234' → 1234",
   "license": "MIT",
   "repository": "radiovisual/just-numbers",
@@ -19,7 +19,19 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "just",
+    "numbers",
+    "string",
+    "currency",
+    "covert",
+    "change",
+    "mutate",
+    "modify",
+    "number",
+    "format",
+    "money",
+    "symbols",
+    "characters"
   ],
   "dependencies": {
     "needle-string": "0.0.1"
