@@ -35,9 +35,25 @@ test('float option', t => {
 	t.is(fn('$1,234.01', {float: false}), 123401);
 });
 
-test('returns 0 on empty strings', t => {
-	t.is(fn('$$$$'), 0);
-	t.is(fn(''), 0);
-	t.is(fn('  '), 0);
-	t.is(fn('qwerty'), 0);
+test('returns undefined on empty strings', t => {
+	t.is(fn('$$$$'), undefined);
+	t.is(fn(''), undefined);
+	t.is(fn('  '), undefined);
+	t.is(fn('qwerty'), undefined);
+});
+
+test('allows zeroOnEmpty option', t => {
+	t.is(fn('$$$$', {zeroOnEmpty: true}), 0);
+	t.is(fn('', {zeroOnEmpty: true}), 0);
+	t.is(fn('qwerty', {zeroOnEmpty: true}), 0);
+});
+
+test('allows custom onNull object', t => {
+	t.is(fn('$$$$', {onNull: Infinity}), Infinity);
+	t.is(fn('qwerty', {onNull: ':)'}), ':)');
+	t.is(fn('qwerty', {onNull: 'NO NUMBERS!'}), 'NO NUMBERS!');
+});
+
+test('prioritize zeroOnEmpty', t => {
+	t.is(fn('$$$$', {onNull: Infinity, zeroOnEmpty: true}), 0);
 });

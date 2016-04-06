@@ -8,6 +8,8 @@ module.exports = function (str, opts) {
 
 	opts = opts || {};
 	opts.float = opts.float && opts.float === true || false;
+	opts.zeroOnEmpty = opts.zeroOnEmpty && opts.zeroOnEmpty === true || false;
+	opts.onNull = opts.onNull || undefined;
 
 	var num = str.replace(/[^0-9.]/ig, '');
 
@@ -17,7 +19,7 @@ module.exports = function (str, opts) {
 	num = num.replace(/\./ig, '');
 
 	if (num === '') {
-		return 0;
+		return opts.zeroOnEmpty ? 0 : opts.onNull;
 	}
 	if (opts.float && decimalpos > 0 && decimalpos !== num.length) {
 		return rebuildFloat(num, decimalpos);

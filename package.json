@@ -1,6 +1,6 @@
 {
   "name": "just-numbers",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Remove all non-number characters and return a number. '$1,234' → 1234",
   "license": "MIT",
   "repository": "radiovisual/just-numbers",
