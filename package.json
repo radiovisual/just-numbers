@@ -31,7 +31,9 @@
     "format",
     "money",
     "symbols",
-    "characters"
+    "characters",
+    "decimal",
+    "precision"
   ],
   "dependencies": {
     "needle-string": "0.0.1"
