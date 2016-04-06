@@ -37,13 +37,13 @@ The `0.x` version of this module would simply return `0` (zero) when no numbers 
  This behavior has changed in `v1.0`, and now `undefined` is returned when no numbers are found in the string.
  If you want to mimic the behavior of `0.x`, you can tell just-numbers to return zero on empty with the [zeroOnEmpty](https://github.com/radiovisual/just-numbers#zeroonempty) option.
 
-Version 1.0 also allows you to supply your own return value in the event of an empty string using the [onNull](https://github.com/radiovisual/just-numbers#onNull) option.
+Version 1.0 also allows you to supply your own return value in the event of an empty string using the [onNull](https://github.com/radiovisual/just-numbers#onnull) option.
 
 ## API
 
 ### just-numbers(input, [options])
 
-Returns a `number`, `undefined` or a [custom value](https://github.com/radiovisual/just-numbers#onNull).
+Returns a `number`, `undefined` or a [custom value](https://github.com/radiovisual/just-numbers#onnull).
 
 #### input
 
