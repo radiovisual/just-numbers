@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/radiovisual/just-numbers.svg?branch=master)](https://travis-ci.org/radiovisual/just-numbers)
 
-> Remove all non-number characters and return a number. `'$1,234'` → `1234`
+> Remove all non-number characters and return a number. `'$1,234'` → `1234`  
 
-This module will also attempt to preserve your decimal precision using the [float option](https://github.com/radiovisual/just-numbers#float): `'$1,234.12'` → `1234.12`
+> Optionally attempt to preserve decimal precision using the [float option](https://github.com/radiovisual/just-numbers#float): `'$1,234.12'` → `1234.12`
+
 
 ## Install
 
