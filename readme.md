@@ -44,7 +44,7 @@ Version 1.0 also allows you to supply your own return value in the event of an e
 
 ### just-numbers(input, [options])
 
-Returns a `number`, `undefined` or a [custom value](https://github.com/radiovisual/just-numbers#onnull).
+Returns a `number`. If no numbers are found in the string `undefined` or a [custom value](https://github.com/radiovisual/just-numbers#onnull) is returned.
 
 #### input
 
@@ -97,6 +97,9 @@ justNumbers('no numbers here', {onNull: 'NO NUMBERS!'});
 **avoid values** like `{onNull: undefined}`, `{onNull: null}`, or `{onNull: 0}`. Instead, just use the default behaviors
 (which returns undefined) or the [zeroOnEmpty](https://github.com/radiovisual/just-numbers#zeroonempty) option.
 
+## Notes
+
+- If you supply a number to just-numbers, it will simply return that number...because numbers are *just numbers* :smiley:. 
 
 ## License
 
