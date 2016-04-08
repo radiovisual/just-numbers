@@ -37,11 +37,13 @@ justNumbers('no-numbers-in-string', {zeroOnEmpty: true});
 
 ## v1.0
 
-The `0.x` version of this module would simply return `0` (zero) when no numbers were found in the string.
+- The `0.0.x` version of this module would simply return `0` (zero) when no numbers were found in the string.
  This behavior has changed in `v1.0`, and now `undefined` is returned when no numbers are found in the string.
  If you want to mimic the behavior of `0.x`, you can tell just-numbers to return zero on empty with the [zeroOnEmpty](https://github.com/radiovisual/just-numbers#zeroonempty) option.
 
-Version 1.0 also allows you to supply your own return value in the event of an empty string using the [onNull](https://github.com/radiovisual/just-numbers#onnull) option.
+- `v1.0.0` also allows you to supply your own return value in the event of an empty string using the [onNull](https://github.com/radiovisual/just-numbers#onnull) option.
+
+- Since `v1.0.2`, if you supply a number to just-numbers, it will simply return that number (because numbers are *just numbers*). :smiley: 
 
 ## API
 
@@ -100,9 +102,7 @@ justNumbers('no numbers here', {onNull: 'NO NUMBERS!'});
 **avoid values** like `{onNull: undefined}`, `{onNull: null}`, or `{onNull: 0}`. Instead, just use the default behaviors
 (which returns undefined) or the [zeroOnEmpty](https://github.com/radiovisual/just-numbers#zeroonempty) option.
 
-## Notes
 
-- If you supply a number to just-numbers, it will simply return that number...because numbers are *just numbers* :smiley:. 
 
 ## License
 
