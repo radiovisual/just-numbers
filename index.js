@@ -2,8 +2,11 @@
 var needles = require('needle-string');
 
 module.exports = function (str, opts) {
+	if (typeof str === 'number') {
+		return str;
+	}
 	if (typeof str !== 'string') {
-		throw new TypeError('numberify expected a string');
+		throw new TypeError('just-numbers expected a string');
 	}
 
 	opts = opts || {};

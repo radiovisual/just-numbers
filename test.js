@@ -4,7 +4,7 @@ import fn from './';
 test('expect a string', t => {
 	t.throws(() => {
 		fn({});
-	}, 'numberify expected a string');
+	}, 'just-numbers expected a string');
 });
 
 test('returns a number', t => {
@@ -56,4 +56,9 @@ test('allows custom onNull object', t => {
 
 test('prioritize zeroOnEmpty', t => {
 	t.is(fn('$$$$', {onNull: Infinity, zeroOnEmpty: true}), 0);
+});
+
+test('let numbers pass through', t => {
+	t.is(fn(100), 100);
+	t.is(fn(100.23), 100.23);
 });
