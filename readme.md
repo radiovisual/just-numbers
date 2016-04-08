@@ -26,10 +26,13 @@ justNumbers('$1$2$3$4$5');
 //=> 12345
 
 justNumbers('no-numbers-in-string');
-//=> 0
+//=> undefined
 
 justNumbers('$1,234.23', {float: true});
 //=> 1234.23
+
+justNumbers('no-numbers-in-string', {zeroOnEmpty: true});
+//=> 0
 ```
 
 ## v1.0
